@@ -17,7 +17,7 @@ df_reglas=pd.DataFrame(df_reglas)
 """
 VALIDACIONES GENERALES
 """
-def Remove_spacewith(s): #this method receives a string for spaces white remove
+def Remove_spacewhite(s): #this method receives a string for spaces white remove
     try: 
         s=str(s) #Transform to string so that value can be read
         s=s.lstrip().rstrip().strip()#remove white spaces of string
@@ -70,7 +70,7 @@ def Validate_not_greater_today(dte,index): #This method receives a index number 
 def Change_Date_Format(dte, index):#This method receives a index number and a date for transformate the format date    
     try:
         dte=str(dte)#convert to string
-        dte=Remove_Special_Characters(Remove_spacewith(dte))#data dirty is remove
+        dte=Remove_Special_Characters(Remove_spacewhite(dte))#data dirty is remove
         dte=datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y")#str(datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y"))
     except Exception as ex:
         errordata.append(index) #index is added to the error list
@@ -150,32 +150,32 @@ try:
      for index, row in df_reglas.iterrows(): #loop through each line of the csv
          try:                             
              #VALIDA ID
-             df_reglas.loc[index1,"IdCliente"]=Remove_spacewith(row.IdCliente)
+             df_reglas.loc[index1,"IdCliente"]=Remove_spacewhite(row.IdCliente)
              if (IsNumeric(df_reglas.loc[index1,"IdCliente"], index1)==False):#Validate if it is numeric
                  print('non-numeric id:**', df_reglas.loc[index1,"IdCliente"],'**')
                  #sys.exit()
              
              #VALIDA NOMBRE
-             df_reglas.loc[index1,"Nombre"]=Remove_Special_Characters(Remove_spacewith(row.Nombre))            
+             df_reglas.loc[index1,"Nombre"]=Remove_Special_Characters(Remove_spacewhite(row.Nombre))            
              if (Validate_Names(df_reglas.loc[index1,"Nombre"],index1)==False):
                  print('Malformed Name:**',df_reglas.loc[index1,"Nombre"],'**')                 
              
              #VALIDA NÚMERO TELEFONICO
-             df_reglas.loc[index1,"NumeroContacto"]=Remove_Special_Characters(Remove_spacewith(row.NumeroContacto))
+             df_reglas.loc[index1,"NumeroContacto"]=Remove_Special_Characters(Remove_spacewhite(row.NumeroContacto))
              if(Validate_phone(df_reglas.loc[index1,"NumeroContacto"],10,index1)=="x1000"):
                  print('Malformed Phone number: ', df_reglas.loc[index1,"NumeroContacto"])
                  #sys.exit()
                  
-             df_reglas.loc[index1,"Estado"]=Remove_Special_Characters(Remove_spacewith(row.Estado))
-             df_reglas.loc[index1,"AlcaldiaMunicipio"]=Remove_Special_Characters(Remove_spacewith(row.AlcaldiaMunicipio))
+             df_reglas.loc[index1,"Estado"]=Remove_Special_Characters(Remove_spacewhite(row.Estado))
+             df_reglas.loc[index1,"AlcaldiaMunicipio"]=Remove_Special_Characters(Remove_spacewhite(row.AlcaldiaMunicipio))
              
              #VALIDA RFC
-             df_reglas.loc[index1,"RFC"]=Remove_Special_Characters(Remove_spacewith(row.RFC))  
+             df_reglas.loc[index1,"RFC"]=Remove_Special_Characters(Remove_spacewhite(row.RFC))  
              if(Validate_rfc(df_reglas.loc[index1,"RFC"],index1)==False):
                  print('Malformed RFC: ',df_reglas.loc[index1,"RFC"])
              
              #VALIDA EMAIL
-             df_reglas.loc[index1,"email"]=Remove_Special_Characters(Remove_spacewith(row.email))
+             df_reglas.loc[index1,"email"]=Remove_Special_Characters(Remove_spacewhite(row.email))
              if(Validate_Email(df_reglas.loc[index1,"email"],index1)==False):
                  print('Malformed correo: ', df_reglas.loc[index1,"email"])                        
              

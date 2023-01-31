@@ -16,7 +16,7 @@ df_reglas=pd.DataFrame(df_reglas)
 """
 VALIDACIONES GENERALES
 """
-def Remove_spacewith(s): #this method receives a string for spaces white remove
+def Remove_spacewhite(s): #this method receives a string for spaces white remove
     try: 
         s=str(s) #Transform to string so that value can be read
         s=s.lstrip().rstrip().strip()#remove white spaces of string
@@ -67,7 +67,7 @@ def Validate_not_greater_today(dte,index): #This method receives a index number 
 def Change_Date_Format(dte, index):#This method receives a index number and a date for transformate the format date    
     try:
         dte=str(dte)#convert to string
-        dte=Remove_Special_Characters(Remove_spacewith(dte))#data dirty is remove
+        dte=Remove_Special_Characters(Remove_spacewhite(dte))#data dirty is remove
         dte=datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y")#str(datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y"))
     except Exception as ex:
         errordata.append(index) #index is added to the error list
@@ -115,7 +115,7 @@ try:
      for index, row in df_reglas.iterrows(): #loop through each line of the csv
          try:                             
              #VALIDA ID
-             df_reglas.loc[index1,"IdVenta"]=Remove_spacewith(row.IdVenta)
+             df_reglas.loc[index1,"IdVenta"]=Remove_spacewhite(row.IdVenta)
              if (IsNumeric(df_reglas.loc[index1,"IdVenta"], index1)==False): #Validate if it is numeric
                  print('non-numeric id:**', df_reglas.loc[index1,"IdVenta"],'**')
                  #sys.exit()
@@ -130,7 +130,7 @@ try:
                  print('error fechas: {}'.format(ex))
              
              #VALIDATE MontoVenta
-             df_reglas.loc[index1,"MontoVenta"]=Remove_Special_Characters(Remove_spacewith(row.MontoVenta))  
+             df_reglas.loc[index1,"MontoVenta"]=Remove_Special_Characters(Remove_spacewhite(row.MontoVenta))  
              try:
                  MontoVenta=df_reglas.loc[index1,"MontoVenta"]
                  df_reglas.loc[index1,"MontoVenta"]=Format_Decimal(df_reglas.loc[index1,"MontoVenta"])#if the decimal is valid, then limit the amount of decimal                 
@@ -140,7 +140,7 @@ try:
                  print('Malformed MontoVenta:',df_reglas.loc[index1,"MontoVenta"],'data type:', type(MontoVenta),'error: ', ex) 
              
              #VALIDATE CantidadVenta
-             df_reglas.loc[index1,"CantidadVenta"]=Remove_Special_Characters(Remove_spacewith(row.CantidadVenta))  
+             df_reglas.loc[index1,"CantidadVenta"]=Remove_Special_Characters(Remove_spacewhite(row.CantidadVenta))  
              try:
                  CantidadVenta=df_reglas.loc[index1,"CantidadVenta"]
                  df_reglas.loc[index1,"CantidadVenta"]=Format_Decimal(df_reglas.loc[index1,"CantidadVenta"])#if the decimal is valid, then limit the amount of decimal                 
@@ -150,7 +150,7 @@ try:
                  print('Malformed CantidadVenta:',df_reglas.loc[index1,"CantidadVenta"],'data type:', type(CantidadVenta),'error: ', ex)    
              
              #VALIDATE Descuento
-             df_reglas.loc[index1,"Descuento"]=Remove_Special_Characters(Remove_spacewith(row.Descuento))  
+             df_reglas.loc[index1,"Descuento"]=Remove_Special_Characters(Remove_spacewhite(row.Descuento))  
              try:
                  Descuento=df_reglas.loc[index1,"Descuento"]
                  df_reglas.loc[index1,"Descuento"]=Format_Decimal(df_reglas.loc[index1,"Descuento"])#if the decimal is valid, then limit the amount of decimal                 
@@ -166,7 +166,7 @@ try:
                  print('Malformed Descuento:',df_reglas.loc[index1,"Descuento"],'data type:', type(Descuento),'error: ', ex)    
              
              #VALIDATE MontoFinalVenta
-             df_reglas.loc[index1,"MontoFinalVenta"]=Remove_Special_Characters(Remove_spacewith(row.MontoFinalVenta))  
+             df_reglas.loc[index1,"MontoFinalVenta"]=Remove_Special_Characters(Remove_spacewhite(row.MontoFinalVenta))  
              try:
                  MontoFinalVenta=df_reglas.loc[index1,"MontoFinalVenta"]
                  df_reglas.loc[index1,"MontoFinalVenta"]=Format_Decimal(df_reglas.loc[index1,"MontoFinalVenta"])#if the decimal is valid, then limit the amount of decimal                 
@@ -176,17 +176,17 @@ try:
                  print('Malformed MontoFinalVenta:',df_reglas.loc[index1,"MontoFinalVenta"],'data type:', type(MontoFinalVenta),'error: ', ex)              
              
              #VALIDA fk_Producto
-             df_reglas.loc[index1,"fk_producto"]=Remove_spacewith(row.fk_producto)
+             df_reglas.loc[index1,"fk_producto"]=Remove_spacewhite(row.fk_producto)
              if (IsNumeric(df_reglas.loc[index1,"fk_producto"], index1)==False):#Validate if it is numeric
                  print('non-numeric fk_producto:**', df_reglas.loc[index1,"fk_producto"],'**')
              
              #VALIDA fk_cliente
-             df_reglas.loc[index1,"fk_cliente"]=Remove_spacewith(row.fk_cliente)
+             df_reglas.loc[index1,"fk_cliente"]=Remove_spacewhite(row.fk_cliente)
              if (IsNumeric(df_reglas.loc[index1,"fk_cliente"], index1)==False):#Validate if it is numeric
                  print('non-numeric fk_cliente:**', df_reglas.loc[index1,"fk_cliente"],'**')
              
              #VALIDA fk_sucursal
-             df_reglas.loc[index1,"fk_sucursal"]=Remove_spacewith(row.fk_sucursal)
+             df_reglas.loc[index1,"fk_sucursal"]=Remove_spacewhite(row.fk_sucursal)
              if (IsNumeric(df_reglas.loc[index1,"fk_sucursal"], index1)==False):#Validate if it is numeric
                  print('non-numeric fk_sucursal:**', df_reglas.loc[index1,"fk_sucursal"],'**')
                                                                                                                                                   

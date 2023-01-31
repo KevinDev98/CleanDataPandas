@@ -15,7 +15,7 @@ df_reglas=pd.DataFrame(df_reglas)
 """
 VALIDACIONES GENERALES
 """
-def Remove_spacewith(s): #this method receives a string for spaces white remove
+def Remove_spacewhite(s): #this method receives a string for spaces white remove
     try: 
         s=str(s) #Transform to string so that value can be read
         s=s.lstrip().rstrip().strip()#remove white spaces of string
@@ -66,7 +66,7 @@ def Validate_not_greater_today(dte,index): #This method receives a index number 
 def Change_Date_Format(dte, index):#This method receives a index number and a date for transformate the format date    
     try:
         dte=str(dte)#convert to string
-        dte=Remove_Special_Characters(Remove_spacewith(dte))#data dirty is remove
+        dte=Remove_Special_Characters(Remove_spacewhite(dte))#data dirty is remove
         dte=datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y")#str(datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y"))
     except Exception as ex:
         errordata.append(index) #index is added to the error list
@@ -83,18 +83,18 @@ try:
      for index, row in df_reglas.iterrows(): #loop through each line of the csv
          try:                             
              #VALIDA ID
-             df_reglas.loc[index1,"IdSucursal"]=Remove_spacewith(row.IdSucursal)
+             df_reglas.loc[index1,"IdSucursal"]=Remove_spacewhite(row.IdSucursal)
              if (IsNumeric(df_reglas.loc[index1,"IdSucursal"],index1)==False):
                  print('non-numeric id:**', df_reglas.loc[index1,"IdSucursal"],'**')
                  #sys.exit()
              
              #VALIDATE NOMBRE
-             df_reglas.loc[index1,"Sucursal"]=Remove_Special_Characters(Remove_spacewith(row.Sucursal))                                                      
+             df_reglas.loc[index1,"Sucursal"]=Remove_Special_Characters(Remove_spacewhite(row.Sucursal))                                                      
              #VALIDATE MARCA    
-             df_reglas.loc[index1,"Direccion"]=Remove_Special_Characters(Remove_spacewith(row.Direccion))
+             df_reglas.loc[index1,"Direccion"]=Remove_Special_Characters(Remove_spacewhite(row.Direccion))
              
-             df_reglas.loc[index1,"Estado"]=Remove_Special_Characters(Remove_spacewith(row.Estado))
-             df_reglas.loc[index1,"AlcaldiaMunicipio"]=Remove_Special_Characters(Remove_spacewith(row.AlcaldiaMunicipio))         
+             df_reglas.loc[index1,"Estado"]=Remove_Special_Characters(Remove_spacewhite(row.Estado))
+             df_reglas.loc[index1,"AlcaldiaMunicipio"]=Remove_Special_Characters(Remove_spacewhite(row.AlcaldiaMunicipio))         
              try:
                  df_reglas.loc[index1,"FechaRegistro"]=Change_Date_Format(row.FechaRegistro,index1)
                  Validate_not_greater_today(df_reglas.loc[index1,"FechaRegistro"],index1)
