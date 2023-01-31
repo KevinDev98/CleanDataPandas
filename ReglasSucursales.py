@@ -9,6 +9,7 @@ from datetime import datetime
 
 pathIn="C:\\Users\\kevin.gutierrez\\Documents\\PROYECTOS\\IDS AZURE\\Reglas\\Input\\"
 pathOut="C:\\Users\\kevin.gutierrez\\Documents\\PROYECTOS\\IDS AZURE\\Reglas\\Output\\"
+
 df_reglas=pd.read_csv(pathIn+'Sucursales2.csv')
 df_reglas=pd.DataFrame(df_reglas)
 """
