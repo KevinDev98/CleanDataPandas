@@ -1,0 +1,101 @@
+IdProducto,NombreProd,marca,Contenido,Precio,FechaRegistro
+21,Lychee,bimbo,10 gr,64.491,2022-11-02
+22,Soup Campbells - Tomato Bisque,bimbo,20 gr,19.228,2022-11-12
+23,External Supplier,bimbo,30 gr,97.873,2022-12-23
+24,Appetizer - Smoked Salmon / Dill,bimbo,10 gr,98.48,2022-12-11
+25,Taro Leaves,bimbo,20 gr,79.43,2022-10-25
+26,Ginsing - Fresh,bimbo,10 gr,45.9,2023-01-08
+27,"Pepper - Julienne, Frozen",bimbo,20 gr,88.31,2022-12-28
+28,Broom - Angled,bimbo,30 gr,25.785,2022-11-12
+29,"Pasta - Bauletti, Chicken White",bimbo,10 gr,95.57,2022-11-15
+30,Wine - Chateau Timberlay,bimbo,20 gr,42.88,2022-11-24
+31,Cheese - Comte,bimbo,10 gr,56.31,2023-01-02
+32,"Salmon - Atlantic, Skin On",bimbo,20 gr,90.05,2022-11-05
+33,Cheese - Cheddar With Claret,bimbo,30 gr,84.28,2022-12-28
+34,Lamb Leg - Bone - In Nz,bimbo,10 gr,25.96,2022-12-01
+35,Tarragon - Fresh,bimbo,20 gr,26.14,2022-12-13
+36,Toothpick Frilled,bimbo,10 gr,8.91,2022-11-25
+37,Tea - Herbal Orange Spice,bimbo,20 gr,61.28,2022-10-27
+38,Tart - Lemon,bimbo,30 gr,24.81,2022-10-26
+39,Peas - Frozen,bimbo,10 gr,45.98,2022-10-24
+40,"Cheese - Cheddar, Medium",bimbo,20 gr,55.53,2023-01-11
+41,Crackers - Graham,bimbo,10 gr,66.91,2022-11-21
+42,French Pastries,bimbo,20 gr,92.05,2022-12-17
+43,"Bread - Roll, Italian",bimbo,30 gr,59.73,2022-12-02
+44,Bouillion - Fish,bimbo,10 gr,58.22,2023-01-04
+45,Pork - Suckling Pig,bimbo,20 gr,21.07,2022-11-06
+46,Beer - Creemore,bimbo,10 gr,69.13,2022-11-12
+47,"Orange - Canned, Mandarin",bimbo,20 gr,66.6,2022-12-27
+48,"Pork - Back, Short Cut, Boneless",bimbo,30 gr,35.31,2023-02-28
+49,Wine - Kwv Chenin Blanc South,bimbo,10 gr,-2,2022-11-06
+50,Cucumber - English,bimbo,20 gr,74.22,2022-12-20
+51,Cocoa Butter,bimbo,10 gr,33.94,2022-10-28
+52,Taro Root,bimbo,20 gr,97.42,2022-12-19
+53,Peach - Fresh,bimbo,30 gr,32.41,2022-11-07
+54,Salt - Seasoned,bimbo,10 gr,22.26,2022-12-21
+55,Tomatoes - Grape,bimbo,20 gr,60.02,2022-12-01
+56,Isomalt,bimbo,10 gr,9.92,2022-12-14
+57,"Bread - Roll, Canadian Dinner",bimbo,20 gr,55.2,2022-11-22
+58,Table Cloth 54x72 White,bimbo,30 gr,42.03,2022-11-29
+59,Containter - 3oz Microwave Rect.,bimbo,10 gr,82.76,2022-12-01
+60,"Bread - Bagels, Mini",bimbo,20 gr,10.19,2022-12-29
+61,Rosemary - Dry,bimbo,10 gr,-100,2023-01-03
+62,Chocolate - Semi Sweet,bimbo,20 gr,68.76,2022-12-03
+63,Beef - Striploin Aa,bimbo,30 gr,32.74,2022-12-28
+64,Corn Syrup,bimbo,10 gr,93.16,2022-11-24
+65,"Yogurt - Blueberry, 175 Gr",bimbo,20 gr,64.98,2023-01-10
+66,Cheese - Gouda Smoked,bimbo,10 gr,69.98,2023-01-08
+67,Prunes - Pitted,bimbo,20 gr,88.62,2022-12-14
+68,Wine - Ruffino Chianti Classico,bimbo,30 gr,18.58,2022-11-08
+69,"Pineapple - Canned, Rings",bimbo,10 gr,61.61,2022-12-21
+70,Chicken - Wieners,bimbo,20 gr,41.85,2022-12-22
+71,"Wine - Red, Cooking",bimbo,10 gr,13.76,2022-11-25
+72,Milk - Buttermilk,bimbo,20 gr,54.2,2022-12-17
+73,Beans - Fine,bimbo,30 gr,-26.66,2022-10-29
+74,Mints - Striped Red,bimbo,10 gr,66.78,2022-11-10
+75,Steampan Lid,bimbo,20 gr,49.61,2022-11-24
+76,"Mushroom - Enoki, Dry",bimbo,10 gr,33.78,2023-01-10
+77,Scotch - Queen Anne,bimbo,20 gr,79.73,2022-12-04
+78,Chips Potato Reg 43g,bimbo,30 gr,63.94,2022-11-11
+79,Blue Curacao - Marie Brizard,bimbo,10 gr,20.34,2022-12-25
+80,Bar Energy Chocchip,bimbo,20 gr,24.93,2022-11-25
+81,"Mushroom - Chanterelle, Dry",bimbo,10 gr,43.49,2022-11-21
+82,Island Oasis - Wildberry,bimbo,20 gr,86.18,2022-11-19
+83,Guava,bimbo,30 gr,49.31,2022-12-31
+84,Longos - Penne With Pesto,bimbo,10 gr,98.81,2023-01-02
+85,Gooseberry,bimbo,20 gr,84.07,2022-12-02
+86,"Wine - Red, Mosaic Zweigelt",bimbo,10 gr,29.79,2022-12-18
+87,Water - Spring 1.5lit,bimbo,20 gr,49.26,2022-11-24
+88,Wine - Vineland Estate Semi - Dry,bimbo,30 gr,46.93,2022-11-28
+89,Energy Drink - Franks Pineapple,bimbo,10 gr,86.42,2022-12-27
+90,Silicone Parch. 16.3x24.3,bimbo,20 gr,85.46,2023-01-08
+91,Beer - Corona,bimbo,10 gr,64.06,2023-02-28
+92,Steampan - Foil,bimbo,20 gr,44.3,2023-01-11
+93,Aspic - Light,bimbo,30 gr,57.11,2022-11-22
+94,Foam Tray S2,bimbo,10 gr,33.37,2022-12-08
+95,Tuna - Fresh,bimbo,20 gr,49.01,2023-01-14
+96,"Lamb - Leg, Bone In",bimbo,10 gr,94.25,2023-01-13
+97,Beef - Texas Style Burger,bimbo,20 gr,93.57,2022-12-20
+98,Broom - Push,bimbo,30 gr,68.41,2022-10-31
+99,Wine - Pinot Grigio Collavini,bimbo,10 gr,53.76,2022-11-25
+100,Corn - Mini,bimbo,20 gr,12.56,2022-11-30
+101,"Veal - Insides, Grains",bimbo,10 gr,79.92,2022-12-19
+102,Pears - Bartlett,bimbo,20 gr,37.3,2022-12-14
+103,Spinach - Baby,bimbo,30 gr,75.78,2022-12-31
+104,Eggplant - Asian,bimbo,10 gr,30.27,18 DE NOVIEMBRE DEL 22
+105,Rice - Jasmine Sented,bimbo,20 gr,48.13,2022-11-13
+106,Pork - Shoulder,bimbo,10 gr,70.5,2022-11-11
+107,Glass Clear 8 Oz,bimbo,20 gr,11.48,2022-10-24
+108,Table Cloth 81x81 Colour,bimbo,30 gr,90.23,2022-11-06
+109,Croissants Thaw And Serve,bimbo,10 gr,79.05,2022-11-19
+110,"Wine - Harrow Estates, Vidal",bimbo,20 gr,29.26,2022-11-18
+111,Taro Leaves,bimbo,10 gr,8.9,2022-12-06
+112,Ice Cream - Vanilla,bimbo,20 gr,85.94,2022-10-30
+113,"Bread - Rolls, Corn",bimbo,30 gr,79.17,2022-10-28
+114,Pimento - Canned,bimbo,10 gr,98.35,2022-11-28
+115,Nougat - Paste / Cream,bimbo,20 gr,5.88,2022-12-24
+116,Milk 2% 500 Ml,bimbo,10 gr,75.42,2022-12-24
+117,Compound - Strawberry,bimbo,20 gr,81.77,17 DE DICIEMBRE DEL 22
+118,Lamb Rack Frenched Australian,bimbo,30 gr,43.55,2022-12-21
+119,Lettuce - California Mix,bimbo,10 gr,85.32,2022-11-06
+120,Wine - Champagne Brut Veuve,bimbo,20 gr,56.42,2022-11-02

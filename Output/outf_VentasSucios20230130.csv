@@ -1,0 +1,4 @@
+IdVenta,FechaVenta,CantidadVenta,MontoVenta,Descuento,MontoFinalVenta,fk_producto,fk_cliente,fk_sucursal,Desc_error
+17,01/12/2022,42.01,4.9,100.4,3.46,85,940,74,No se permite descuentos mayores al 100%
+23,11/02/2023,29.83,62.34,9.09,56.67,16,731,10,"Fecha invalida, no puede ser mayor a hoy"
+30,27/12/2022,73.44,41.03,105.0,9.31,59,751,52,No se permite descuentos mayores al 100%

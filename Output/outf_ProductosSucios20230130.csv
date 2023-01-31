@@ -1,0 +1,10 @@
+IdProducto,NombreProd,marca,Contenido,Precio,FechaRegistro,Desc_error
+48,Pork - Back Short Cut Boneless,bimbo,30 gr,35.31,28/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+49,Wine - Kwv Chenin Blanc South,bimbo,10 gr,-2.0,06/11/2022,Monto menor a 0
+61,Rosemary - Dry,bimbo,10 gr,-100.0,03/01/2023,Monto menor a 0
+73,Beans - Fine,bimbo,30 gr,-26.66,29/10/2022,Monto menor a 0
+91,Beer - Corona,bimbo,10 gr,64.06,28/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+104,Eggplant - Asian,bimbo,10 gr,30.27,18 DE NOVIEMBRE DEL 22,Formato de fecha invalido. Debe tener formato dd/MM/yyyy
+104,Eggplant - Asian,bimbo,10 gr,30.27,18 DE NOVIEMBRE DEL 22,"Fecha invalida, no puede ser mayor a hoy"
+117,Compound - Strawberry,bimbo,20 gr,81.77,17 DE DICIEMBRE DEL 22,Formato de fecha invalido. Debe tener formato dd/MM/yyyy
+117,Compound - Strawberry,bimbo,20 gr,81.77,17 DE DICIEMBRE DEL 22,"Fecha invalida, no puede ser mayor a hoy"

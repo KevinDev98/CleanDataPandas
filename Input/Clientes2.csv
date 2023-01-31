@@ -1,0 +1,93 @@
+IdCliente,Nombre,RFC,FechaNacimiento,email,NumeroContacto,Estado,AlcaldiaMunicipio,FechaRegistro
+1,Fausto Enrique,MEBF910716j93,1991-07-22,fausto.mendoza@ids.com.mx,5523338184,Mexico,Nezahualcoyotl,2023-01-13
+2,Julio Jesus,MJBJ981007j98,1998-07-31,julio.mendoza@gmail.com,5585595167,Mexico,Nezahualcoyotl,2023-01-13
+3,Guadalupe Isabel,MGHE910722J98,1987-05-02,Guadalupe.mendoza@hotmail.com,5523338184,Mexico,Nezahualcoyotl,2023-01-13
+4,Alfonso Glanz,GUEK981117EK1,2019-05-17,aglanz0@multiply.com,4852360588,Zavrč,Zavra,2022-11-02
+5,$Brigitte Vader#$,GUEK981117EK2,1981-04-03,bvader1@biblegateway.com,5463039404,Villa Concepción del Tío,Villa Concepción del Tío,2022-11-12
+6,%Pamella Ashworth,GUEK981117EK3,1983-02-09,pashworth2@xrea.com,8581426553,Cakungsari,Cakungsari,2022-12-23
+7,Corene Roake,GUEK981117EK4,2022-03-12,croake3@bloglines.com,3101048133,Qiuchuan,Qiuchuan,2022-12-11
+8,Valerye Pullman,GUEK981117EK5,2006-03-28,vpullman4@unesco.org,8491512881,Rrasa e Sipërme,Rrasa e Sipërme,2022-10-25
+9,Ellen Joseph,GUEK981117EK6,1987-02-14,ejoseph5@dmoz.org,7411942463,Cadiz,Cadiz,2023-01-08
+10,Corinne Dear,GUEK981117EK7,1995-11-07,cdear6@barnesandnoble.com,9393689646,Beibao,Beibao,2022-12-28
+11,Jacquenetta Molfino,GUEK981117EK8,1990-03-22,jmolfino7@goodreads.com,8093057275,Peroguarda,Peroguarda,2022-11-12
+12,Roderich Tortoishell,GUEK981117EK9,2006-08-07,rtortoishell8_comsenz.com,1836065595,Podkumskiy,Podkumskiy,2022-11-15
+13,Gina Michiel,GUEK981117EK1,1986-08-28,gmichiel9@yolasite.com,8915416479,Novhorod-Sivers’kyy,Novhorod-Sivers’kyy,2022-11-24
+14,Curry Catcheside,GUEK981117EK2,1985-04-11,ccatchesidea@domainmarket.com,3803149428,Ueda,Ueda,2023-02-02
+15,Standford Nussen,GUEK981117EK3,2004-06-19,snussenb@fastcompany.com,3809509893,Tucheng,Tucheng,2023-02-27
+16,Abbe MacAne,GUEK981117EK4,1987-06-23,amacanec@deviantart.com,1281230926,Guankou,Guankou,2022-12-28
+17,Dierdre Hadeke,GUEK981117EK5,1989-11-08,dhadeked@unc.edu,4615903101,Charlottenberg,Charlottenberg,2022-12-01
+18,Barnabas Barkus,GUEK981117EK6,1998-12-27,bbarkuse@washingtonpost.com,50198965,Lishu,Lishu,2022-12-13
+19,Kalinda Brandino,GUEK981117EK7,2001-11-17,kbrandinof@unesco.org,6438548344,Beicheng,Beicheng,2022-11-25
+20,Torr Waitland,GUEK981117EK8,1984-05-02,twaitlandg@digg.com,7659560054,Indianapolis,Indianapolis,2022-10-27
+21,Hollis Praton,GUEK981117EK9,1989-10-19,hpratonh@mail.ru,2886010909,Yambrasbamba,Yambrasbamba,2022-10-26
+22,Anett Kehir,GUEK981117EK1,2005-09-17,akehiri@discuz.net,7817834575,Guicheng,Guicheng,2022-10-24
+23,Tamara Bogey,323583573-3,1996-02-09,tbogeyj@sciencedaily.com,3671105224,Chavárion,Chavárion,2023-01-11
+24,Thor Haking,GUEK981117EK1,1982-09-26,thakingk@yelp.com,5036927352,Ḩabīl ar Raydah,Ḩabīl ar Raydah,2022-11-21
+25,Burg Lascelles,GUEK981117EK2,1994-02-16,blascellesl@@pcworld.com,3093808015,Colonias Unidas,Colonias Unidas,2022-12-17
+26, Delilah Greenan,GUEK981117EK3,2002-04-22,dgreenanm@washington.edu,8585920204,Jajarkrajan,Jajarkrajan,2022-12-02
+27,Kiri Cellier,GUEK981117EK4,1981-10-06,kcelliern@smugmug.com,2385508499,Igede-Ekiti,Igede-Ekiti,2023-01-04
+28,Alejandrina Bradlaugh,GUEK981117EK5,2008-03-16,abradlaugho@google.co.uk,1801539504,Leiwang,Leiwang,2022-11-06
+29,Colman Ciraldo,GUEK981117EK6,2013-07-17,cciraldop@europa.eu,7498410124,Augsburg,Augsburg,2022-11-12
+30,Nat Vian,GUEK981117EK7,1986-03-26,nvianq@bluehost.com,9311751610,Malita,Malita,2022-12-27
+31,Barty Boscott,GUEK981117EK8,1990-01-26,bboscottr@miibeian.gov.cn,4751688841,Skärhamn,Skärhamn,2022-11-07
+32,Shir Doree,GUEK981117EK9,1980-08-27,sdorees@multiply.com,3157159581,Salamanca,Salamanca,2022-11-06
+33,Kaitlynn Wessell,GUEK981117EK1,2023-02-27,kwessellt@narod.ru,3442664692,Hongdu,Hongdu,2022-12-20
+34,Selina Gisby,GUEK981117EK2,1982-09-22,sgisbyu@lulu.com,68775997,Belomorsk,Belomorsk,2022-10-28
+35,Erny Kurth,GUEK981117EK3,2017-05-02,ekurthv@,2084416906,Boise,Boise,2022-12-19
+36,Ferris Wrathmall,GUEK981117EK4,2014-06-11,fwrathmallw@whitehouse.gov,1442961176,Sanxi,Sanxi,2022-11-07
+37,Steven Cozz2,GUEK981117EK5,2023-02-28,scozzix@elpais.com,4483252237,Segong,Segong,2022-12-21
+38,Garwin Hentzeler,647063488-5,2009-12-29,ghentzelery@tiny.cc,5125894663,Penedo,Penedo,2022-12-01
+39,Caresse Leggin,150257914-6,2015-09-15,clegginz@answers.com,9762285315,Lagunas,Lagunas,2022-12-14
+40,Hunt Lister,179468818-8,1994-11-02,hlister10@ebay.com,4259579147,Shamva,Shamva,2022-11-22
+41,Krystalle Hek,253432678-3,1984-07-08,khek11@dailymail.co.uk,3949497211,Mardzad,Mardzad,2022-11-29
+42,Boone McEwen,505006812-6,2001-08-12,bmcewen12@foxnews.com,3001430102,Kavalerovo,Kavalerovo,2022-12-01
+43,Hamid Berth,643253175-6,2018-03-08,hberth13@icio.us,5943015276,Targuist,Targuist,2022-12-29
+44,Krisha Kempson,407661405-4,2016-09-09,kkempson14@nationalgeographic.com,6662172688,Jatiprahu,Jatiprahu,2023-01-03
+45,Dyann Yearby,814694297-0,1990-02-20,dyearby15@boston.com,6117917769,Galatás,Galatás,2022-12-03
+46,Jesse Di Pietro,421591400-0,2005-03-14,jdi16@hubpages.com,5969968793,Beisijiazi,Beisijiazi,2022-12-28
+47,Percy Marwood,526702674-3,1997-07-29,pmarwood17@fotki.com,8367669884,Cran-Gevrier,Cran-Gevrier,2022-11-24
+48,Vincenz Ghelerdini,557609003-9,1983-02-18,vghelerdini18@kickstarter.com,3246474327,Bahāwalnagar,Bahāwalnagar,2023-01-10
+49,Tommie Camble,982165232-8,2018-08-09,tcamble19@zdnet.com,4808994945,Siikainen,Siikainen,2023-01-08
+50,Gerhardine Gladdis,540703636-3,1990-09-21,ggladdis1a@trellian.com,3036803304,Turkestan,Turkestan,2022-12-14
+51,Betteann Sherburn,152421848-0,1984-03-29,bsherburn1b@miitbeian.gov.cn,9893348349,Kalebun,Kalebun,2022-11-08
+52,Rafaello Sturdey,574492328-4,2022-09-21,rsturdey1c@google.fr,4739737550,Leuwipicung,Leuwipicung,2022-12-21
+53,Gwenore Gjerde,157954207-7,2023-02-28,ggjerde1d@ehow.com,5682657328,Huaitu,Huaitu,2022-12-22
+54,Karlyn Thompsett,905343226-4,1995-02-28,kthompsett1e@ow.ly,7217583132,Brasília,Brasília,2022-11-25
+55,Steven Boscher,870887272-4,2021-07-07,sboscher1f@joomla.org,1262520698,Yiqi,Yiqi,2022-12-17
+56,Yul By,941329369-4,2012-11-21,yby1g@youtube.com,5008213822,Staryy Krym,Staryy Krym,2022-10-29
+57,Ulysses Zoellner,609369842-4,2017-08-03,uzoellner1h@loc.gov,4391172509,Lamas,Lamas,2022-11-10
+58,Jonathon Suddock,058252918-2,2001-09-29,jsuddock1i@phoca.cz,8774533378,Barreiros,Barreiros,2022-11-24
+59,Lotty Brugemann,847410377-0,1985-07-26,lbrugemann1j@tumblr.com,9549466010,Áno Kómi,Áno Kómi,2023-01-10
+60,Mick Rusbridge,852793566-X,1983-05-17,mrusbridge1k@microsoft.com,4747382714,Osieck,Osieck,2022-12-04
+61,Donnajean Filimore,538333027-5,1999-01-26,dfilimore1l@friendfeed.com,9241399496,Nariño,Nariño,2022-11-11
+62,Horst Hare,915407015-5,1988-03-31,hhare1m@arstechnica.com,4163565487,Chivilcoy,Chivilcoy,2022-12-25
+63,Ash Sheers,539204001-2,2020-06-04,asheers1n@ft.com,7845491360,Cikou,Cikou,2023-02-28
+64,Jaymee Meanwell,821927895-1,2021-10-15,jmeanwell1o@pen.io,5837835806,Zhujiang,Zhujiang,2022-11-21
+65,Datha Dominique,846053372-7,1981-03-25,ddominique1p@wordpress.org,8271382565,Temirgoyevskaya,Temirgoyevskaya,2022-11-19
+66,Carolan Kingcott,921567037-8,2014-11-17,ckingcott1q@blogtalkradio.com,9444355969,Roliça,Roliça,2022-12-31
+67,Sheena Spencook,277571142-1,2002-01-15,sspencook1r@toplist.cz,8184715189,Västerås,Västerås,2023-01-02
+68,Ursulina Merrydew,839373857-1,2007-06-12,umerrydew1s@ft.com,4494590729,Visby,Visby,2022-12-02
+69,Alexandre Corselles,502280313-5,2004-12-16,acorselles1t@youtube.com,4618201377,Sóc Trăng,Sóc Trăng,2022-12-18
+70,Yoshiko Swiers,436277177-8,2007-08-11,yswiers1u@home.pl,5487047766,Asunción,Asunción,2023-02-28
+71,Leah Dundridge,914517708-2,1989-08-11,ldundridge1v@jiathis.com,2105464824,Dokshytsy,Dokshytsy,2022-11-28
+72,Carly Breffit,011898705-4,2007-11-24,cbreffit1w@google.es,1482967498,Tojal,Tojal,2022-12-27
+73,Minetta Pedersen,773289476-6,1987-03-03,mpedersen1x@godaddy.com,9443217919,Salgar,Salgar,2023-01-08
+74,Caritta Ridley,289336950-2,1999-11-29,cridley1y@dagondesign.com,8021621002,Ala-Buka,Ala-Buka,2022-11-20
+75,Salome Rochester,283845420-X,2005-12-17,srochester1z@posterous.com,8137259187,Tiberias,Tiberias,2023-01-11
+76,Charo Hunston,634311879-9,1989-03-07,chunston20@opensource.org,1338282689,Tongquan,Tongquan,2022-11-22
+77,Minetta Nagle,398693765-X,1981-10-13,mnagle21@cdc.gov,1963937517,Las Flores,Las Flores,2022-12-08
+78,Luisa McNellis,620781994-2,2018-05-05,lmcnellis22@ocn.ne.jp,1539681100,Lamas,Lamas,2023-02-14
+79,Sadella Currell,473579790-4,2011-12-18,scurrell23@edublogs.org,5789593533,Changhan,Changhan,2023-01-13
+80,Pepe Studdeard,927256865-X,2000-04-11,pstuddeard24@google.pl,1141645397,Yaogou,Yaogou,2022-12-20
+81,Stephani Ladbrook,736720181-6,2000-12-13,sladbrook25@usnews.com,2254787752,Xingquan,Xingquan,2022-10-31
+82,Sapphire German,634844195-4,2012-05-15,sgerman26@blogger.com,5886717599,Honiara,Honiara,2023-02-28
+83,Modestia Peckham,744441944-2,2015-07-18,mpeckham27@alibaba.com,4004174210,Elaiochóri,Elaiochóri,2022-11-30
+84,Muhammad Plaice,115072716-0,8 DE DICIEMBRE DEL 20000,mplaice28@plala.or.jp,4251656987,Geyuan,Geyuan,2022-12-19
+85,Cobb Cavanaugh,939215209-4,1985-11-27,ccavanaugh29@artisteer.com,3053167933,Gaoqiao,Gaoqiao,2022-12-14
+86,Elane Gwillym,582610545-3,1983-02-23,egwillym2a@redcross.org,3952461310,Sundsvall,Sundsvall,2022-12-31
+87,Sibyl Tomeo,779015397-8,1989-07-05,stomeo2b@vk.com,3232702641,Wright,Wright,2022-11-18
+88,Em Baddeley,841595633-9,1989-11-02,ebaddeley2c@wordpress.org,2501379147,Ruyigi,Ruyigi,2022-11-13
+89,Dietrich Shirt,284858535-8,1985-11-11,dshirt2d@tmall.com,6199287238,Namling,Namling,2022-11-11
+90,Jeana Kyd,359617264-0,2000-06-05,jkyd2e@forbes.com,4287155525,Suai,Suai,2022-10-24
+91,Linette Tathacott,115267279-7,2012-03-16,ltathacott2f@pinterest.com,5961563291,Uvira,Uvira,2022-11-06
+92,Lilllie Hakonsen,450872446-9,2020-05-18,lhakonsen2g@taobao.com,4315735836,Sceaux,Sceaux,19 DE NOVIEMBRE

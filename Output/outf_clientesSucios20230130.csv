@@ -1,0 +1,78 @@
+IdCliente,Nombre,RFC,FechaNacimiento,email,NumeroContacto,Estado,AlcaldiaMunicipio,FechaRegistro,Desc_error
+1,Fausto Enrique,MEBF910716j93,22/07/1991,fausto.mendoza@ids.com.mx,5523338184,Mexico,Nezahualcoyotl,13/01/2023,RFC con formato incorrecto
+2,Julio Jesus,MJBJ981007j98,31/07/1998,julio.mendoza@gmail.com,5585595167,Mexico,Nezahualcoyotl,13/01/2023,RFC con formato incorrecto
+12,Roderich Tortoishell,GUEK981117EK9,07/08/2006,rtortoishell8comsenz.com,1836065595,Podkumskiy,Podkumskiy,15/11/2022,email con formato incorrecto
+14,Curry Catcheside,GUEK981117EK2,11/04/1985,ccatchesidea@domainmarket.com,3803149428,Ueda,Ueda,02/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+15,Standford Nussen,GUEK981117EK3,19/06/2004,snussenb@fastcompany.com,3809509893,Tucheng,Tucheng,27/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+18,Barnabas Barkus,GUEK981117EK6,27/12/1998,bbarkuse@washingtonpost.com,50198965,Lishu,Lishu,13/12/2022,Numero telefonico incorrecto
+23,Tamara Bogey,323583573-3,09/02/1996,tbogeyj@sciencedaily.com,3671105224,Chavárion,Chavárion,11/01/2023,RFC con formato incorrecto
+25,Burg Lascelles,GUEK981117EK2,16/02/1994,blascellesl@@pcworld.com,3093808015,Colonias Unidas,Colonias Unidas,17/12/2022,email con formato incorrecto
+33,Kaitlynn Wessell,GUEK981117EK1,27/02/2023,kwessellt@narod.ru,3442664692,Hongdu,Hongdu,20/12/2022,"Fecha invalida, no puede ser mayor a hoy"
+34,Selina Gisby,GUEK981117EK2,22/09/1982,sgisbyu@lulu.com,68775997,Belomorsk,Belomorsk,28/10/2022,Numero telefonico incorrecto
+35,Erny Kurth,GUEK981117EK3,02/05/2017,ekurthv@,2084416906,Boise,Boise,19/12/2022,email con formato incorrecto
+37,Steven Cozz2,GUEK981117EK5,28/02/2023,scozzix@elpais.com,4483252237,Segong,Segong,21/12/2022,Nombre con formato incorrecto
+37,Steven Cozz2,GUEK981117EK5,28/02/2023,scozzix@elpais.com,4483252237,Segong,Segong,21/12/2022,"Fecha invalida, no puede ser mayor a hoy"
+38,Garwin Hentzeler,647063488-5,29/12/2009,ghentzelery@tiny.cc,5125894663,Penedo,Penedo,01/12/2022,RFC con formato incorrecto
+39,Caresse Leggin,150257914-6,15/09/2015,clegginz@answers.com,9762285315,Lagunas,Lagunas,14/12/2022,RFC con formato incorrecto
+40,Hunt Lister,179468818-8,02/11/1994,hlister10@ebay.com,4259579147,Shamva,Shamva,22/11/2022,RFC con formato incorrecto
+41,Krystalle Hek,253432678-3,08/07/1984,khek11@dailymail.co.uk,3949497211,Mardzad,Mardzad,29/11/2022,RFC con formato incorrecto
+42,Boone McEwen,505006812-6,12/08/2001,bmcewen12@foxnews.com,3001430102,Kavalerovo,Kavalerovo,01/12/2022,RFC con formato incorrecto
+43,Hamid Berth,643253175-6,08/03/2018,hberth13@icio.us,5943015276,Targuist,Targuist,29/12/2022,RFC con formato incorrecto
+44,Krisha Kempson,407661405-4,09/09/2016,kkempson14@nationalgeographic.com,6662172688,Jatiprahu,Jatiprahu,03/01/2023,RFC con formato incorrecto
+45,Dyann Yearby,814694297-0,20/02/1990,dyearby15@boston.com,6117917769,Galatás,Galatás,03/12/2022,RFC con formato incorrecto
+46,Jesse Di Pietro,421591400-0,14/03/2005,jdi16@hubpages.com,5969968793,Beisijiazi,Beisijiazi,28/12/2022,RFC con formato incorrecto
+47,Percy Marwood,526702674-3,29/07/1997,pmarwood17@fotki.com,8367669884,Cran-Gevrier,Cran-Gevrier,24/11/2022,RFC con formato incorrecto
+48,Vincenz Ghelerdini,557609003-9,18/02/1983,vghelerdini18@kickstarter.com,3246474327,Bahāwalnagar,Bahāwalnagar,10/01/2023,RFC con formato incorrecto
+49,Tommie Camble,982165232-8,09/08/2018,tcamble19@zdnet.com,4808994945,Siikainen,Siikainen,08/01/2023,RFC con formato incorrecto
+50,Gerhardine Gladdis,540703636-3,21/09/1990,ggladdis1a@trellian.com,3036803304,Turkestan,Turkestan,14/12/2022,RFC con formato incorrecto
+51,Betteann Sherburn,152421848-0,29/03/1984,bsherburn1b@miitbeian.gov.cn,9893348349,Kalebun,Kalebun,08/11/2022,RFC con formato incorrecto
+52,Rafaello Sturdey,574492328-4,21/09/2022,rsturdey1c@google.fr,4739737550,Leuwipicung,Leuwipicung,21/12/2022,RFC con formato incorrecto
+53,Gwenore Gjerde,157954207-7,28/02/2023,ggjerde1d@ehow.com,5682657328,Huaitu,Huaitu,22/12/2022,RFC con formato incorrecto
+53,Gwenore Gjerde,157954207-7,28/02/2023,ggjerde1d@ehow.com,5682657328,Huaitu,Huaitu,22/12/2022,"Fecha invalida, no puede ser mayor a hoy"
+54,Karlyn Thompsett,905343226-4,28/02/1995,kthompsett1e@ow.ly,7217583132,Brasília,Brasília,25/11/2022,RFC con formato incorrecto
+55,Steven Boscher,870887272-4,07/07/2021,sboscher1f@joomla.org,1262520698,Yiqi,Yiqi,17/12/2022,RFC con formato incorrecto
+56,Yul By,941329369-4,21/11/2012,yby1g@youtube.com,5008213822,Staryy Krym,Staryy Krym,29/10/2022,RFC con formato incorrecto
+57,Ulysses Zoellner,609369842-4,03/08/2017,uzoellner1h@loc.gov,4391172509,Lamas,Lamas,10/11/2022,RFC con formato incorrecto
+58,Jonathon Suddock,058252918-2,29/09/2001,jsuddock1i@phoca.cz,8774533378,Barreiros,Barreiros,24/11/2022,RFC con formato incorrecto
+59,Lotty Brugemann,847410377-0,26/07/1985,lbrugemann1j@tumblr.com,9549466010,Áno Kómi,Áno Kómi,10/01/2023,RFC con formato incorrecto
+60,Mick Rusbridge,852793566-X,17/05/1983,mrusbridge1k@microsoft.com,4747382714,Osieck,Osieck,04/12/2022,RFC con formato incorrecto
+61,Donnajean Filimore,538333027-5,26/01/1999,dfilimore1l@friendfeed.com,9241399496,Nariño,Nariño,11/11/2022,RFC con formato incorrecto
+62,Horst Hare,915407015-5,31/03/1988,hhare1m@arstechnica.com,4163565487,Chivilcoy,Chivilcoy,25/12/2022,RFC con formato incorrecto
+63,Ash Sheers,539204001-2,04/06/2020,asheers1n@ft.com,7845491360,Cikou,Cikou,28/02/2023,RFC con formato incorrecto
+63,Ash Sheers,539204001-2,04/06/2020,asheers1n@ft.com,7845491360,Cikou,Cikou,28/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+64,Jaymee Meanwell,821927895-1,15/10/2021,jmeanwell1o@pen.io,5837835806,Zhujiang,Zhujiang,21/11/2022,RFC con formato incorrecto
+65,Datha Dominique,846053372-7,25/03/1981,ddominique1p@wordpress.org,8271382565,Temirgoyevskaya,Temirgoyevskaya,19/11/2022,RFC con formato incorrecto
+66,Carolan Kingcott,921567037-8,17/11/2014,ckingcott1q@blogtalkradio.com,9444355969,Roliça,Roliça,31/12/2022,RFC con formato incorrecto
+67,Sheena Spencook,277571142-1,15/01/2002,sspencook1r@toplist.cz,8184715189,Västerås,Västerås,02/01/2023,RFC con formato incorrecto
+68,Ursulina Merrydew,839373857-1,12/06/2007,umerrydew1s@ft.com,4494590729,Visby,Visby,02/12/2022,RFC con formato incorrecto
+69,Alexandre Corselles,502280313-5,16/12/2004,acorselles1t@youtube.com,4618201377,Sóc Trăng,Sóc Trăng,18/12/2022,RFC con formato incorrecto
+70,Yoshiko Swiers,436277177-8,11/08/2007,yswiers1u@home.pl,5487047766,Asunción,Asunción,28/02/2023,RFC con formato incorrecto
+70,Yoshiko Swiers,436277177-8,11/08/2007,yswiers1u@home.pl,5487047766,Asunción,Asunción,28/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+71,Leah Dundridge,914517708-2,11/08/1989,ldundridge1v@jiathis.com,2105464824,Dokshytsy,Dokshytsy,28/11/2022,RFC con formato incorrecto
+72,Carly Breffit,011898705-4,24/11/2007,cbreffit1w@google.es,1482967498,Tojal,Tojal,27/12/2022,RFC con formato incorrecto
+73,Minetta Pedersen,773289476-6,03/03/1987,mpedersen1x@godaddy.com,9443217919,Salgar,Salgar,08/01/2023,RFC con formato incorrecto
+74,Caritta Ridley,289336950-2,29/11/1999,cridley1y@dagondesign.com,8021621002,Ala-Buka,Ala-Buka,20/11/2022,RFC con formato incorrecto
+75,Salome Rochester,283845420-X,17/12/2005,srochester1z@posterous.com,8137259187,Tiberias,Tiberias,11/01/2023,RFC con formato incorrecto
+76,Charo Hunston,634311879-9,07/03/1989,chunston20@opensource.org,1338282689,Tongquan,Tongquan,22/11/2022,RFC con formato incorrecto
+77,Minetta Nagle,398693765-X,13/10/1981,mnagle21@cdc.gov,1963937517,Las Flores,Las Flores,08/12/2022,RFC con formato incorrecto
+78,Luisa McNellis,620781994-2,05/05/2018,lmcnellis22@ocn.ne.jp,1539681100,Lamas,Lamas,14/02/2023,RFC con formato incorrecto
+78,Luisa McNellis,620781994-2,05/05/2018,lmcnellis22@ocn.ne.jp,1539681100,Lamas,Lamas,14/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+79,Sadella Currell,473579790-4,18/12/2011,scurrell23@edublogs.org,5789593533,Changhan,Changhan,13/01/2023,RFC con formato incorrecto
+80,Pepe Studdeard,927256865-X,11/04/2000,pstuddeard24@google.pl,1141645397,Yaogou,Yaogou,20/12/2022,RFC con formato incorrecto
+81,Stephani Ladbrook,736720181-6,13/12/2000,sladbrook25@usnews.com,2254787752,Xingquan,Xingquan,31/10/2022,RFC con formato incorrecto
+82,Sapphire German,634844195-4,15/05/2012,sgerman26@blogger.com,5886717599,Honiara,Honiara,28/02/2023,RFC con formato incorrecto
+82,Sapphire German,634844195-4,15/05/2012,sgerman26@blogger.com,5886717599,Honiara,Honiara,28/02/2023,"Fecha invalida, no puede ser mayor a hoy"
+83,Modestia Peckham,744441944-2,18/07/2015,mpeckham27@alibaba.com,4004174210,Elaiochóri,Elaiochóri,30/11/2022,RFC con formato incorrecto
+84,Muhammad Plaice,115072716-0,8 DE DICIEMBRE DEL 20000,mplaice28@plala.or.jp,4251656987,Geyuan,Geyuan,19/12/2022,RFC con formato incorrecto
+84,Muhammad Plaice,115072716-0,8 DE DICIEMBRE DEL 20000,mplaice28@plala.or.jp,4251656987,Geyuan,Geyuan,19/12/2022,Formato de fecha invalido. Debe tener formato dd/MM/yyyy
+84,Muhammad Plaice,115072716-0,8 DE DICIEMBRE DEL 20000,mplaice28@plala.or.jp,4251656987,Geyuan,Geyuan,19/12/2022,"Fecha invalida, no puede ser mayor a hoy"
+85,Cobb Cavanaugh,939215209-4,27/11/1985,ccavanaugh29@artisteer.com,3053167933,Gaoqiao,Gaoqiao,14/12/2022,RFC con formato incorrecto
+86,Elane Gwillym,582610545-3,23/02/1983,egwillym2a@redcross.org,3952461310,Sundsvall,Sundsvall,31/12/2022,RFC con formato incorrecto
+87,Sibyl Tomeo,779015397-8,05/07/1989,stomeo2b@vk.com,3232702641,Wright,Wright,18/11/2022,RFC con formato incorrecto
+88,Em Baddeley,841595633-9,02/11/1989,ebaddeley2c@wordpress.org,2501379147,Ruyigi,Ruyigi,13/11/2022,RFC con formato incorrecto
+89,Dietrich Shirt,284858535-8,11/11/1985,dshirt2d@tmall.com,6199287238,Namling,Namling,11/11/2022,RFC con formato incorrecto
+90,Jeana Kyd,359617264-0,05/06/2000,jkyd2e@forbes.com,4287155525,Suai,Suai,24/10/2022,RFC con formato incorrecto
+91,Linette Tathacott,115267279-7,16/03/2012,ltathacott2f@pinterest.com,5961563291,Uvira,Uvira,06/11/2022,RFC con formato incorrecto
+92,Lilllie Hakonsen,450872446-9,18/05/2020,lhakonsen2g@taobao.com,4315735836,Sceaux,Sceaux,19 DE NOVIEMBRE,RFC con formato incorrecto
+92,Lilllie Hakonsen,450872446-9,18/05/2020,lhakonsen2g@taobao.com,4315735836,Sceaux,Sceaux,19 DE NOVIEMBRE,Formato de fecha invalido. Debe tener formato dd/MM/yyyy
+92,Lilllie Hakonsen,450872446-9,18/05/2020,lhakonsen2g@taobao.com,4315735836,Sceaux,Sceaux,19 DE NOVIEMBRE,"Fecha invalida, no puede ser mayor a hoy"
