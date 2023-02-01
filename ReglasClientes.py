@@ -94,15 +94,16 @@ def Validate_phone(s, lngt, index):#This method receives a string, a length, and
     try:
         s=str(s)#Transform to string so that value can be read
         s=s.replace(" ","").replace("-","") #hyphens and spaces whites are removed
+        TorF=True
         for z in s:#loop through each digit of the phone number
             if (z.isnumeric()==False):
                 #print("Número telefonico incorrecto, solo numeros:",z,'--',s)  
-                s="x1000"
+                TorF=False
         lngt=int(lngt)
         if (len(s)!=lngt):
             #print("Número telefonico incorrecto, debe tener una longitud de ", lngt)
-            s="x1000"
-        if (s=="x1000"):
+            TorF=False
+        if (TorF==False):
             errordata.append(index) #index is added to the error list
             desc_errores.append("Numero telefonico incorrecto")#description is added to the desc_error list
         return s
@@ -162,7 +163,7 @@ try:
              
              #VALIDA NÚMERO TELEFONICO
              df_reglas.loc[index1,"NumeroContacto"]=Remove_Special_Characters(Remove_spacewhite(row.NumeroContacto))
-             if(Validate_phone(df_reglas.loc[index1,"NumeroContacto"],10,index1)=="x1000"):
+             if(Validate_phone(df_reglas.loc[index1,"NumeroContacto"],10,index1)==False):
                  print('Malformed Phone number: ', df_reglas.loc[index1,"NumeroContacto"])
                  #sys.exit()
                  
