@@ -66,6 +66,7 @@ def Validate_not_greater_today(dte,index): #This method receives a index number 
 def Change_Date_Format(dte, index):#This method receives a index number and a date for transformate the format date    
     try:
         dte=str(dte)#convert to string
+        dte=dte.replace(" 00:00:00.0000000","").replace(" 00:00:00","")
         dte=Remove_Special_Characters(Remove_spacewhite(dte))#data dirty is remove
         dte=datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y")#str(datetime.strptime(dte, "%Y-%m-%d").strftime("%d/%m/%Y"))
     except Exception as ex:
