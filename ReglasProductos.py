@@ -166,6 +166,7 @@ try:
          df_dirty["Desc_error"]=desc_errores
          now = str(date.today())
          now=now.replace('-','').replace(':','').replace('.', '').replace(' ','_')
+         print("datos limpios: "+str(df_clean.shape[0])+ " datos sucios: "+ str(df_dirty.shape[0]))
          if (df_clean.shape[0]>0):
              df_clean.to_csv(pathOut+"outf_ProductosLimpios"+now+".csv", index=False)#the csv file is generated with the corresponding data
          if (df_dirty.shape[0]>0):
