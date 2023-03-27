@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Mar 21 15:34:55 2023
-
 @author: kevin.gutierrez
 """
 import sys
@@ -46,23 +45,25 @@ def SparkSql(spark):
         print("Error Creando contexto SQL: {}".format(ex))
     return sparksql
 #------------------------DEPURACIÓN DE DATOS
-def Remove_duplicates(df):
+def Remove_duplicates(df): #return a dataframe
     non_dup_df = df.dropDuplicates()
     return non_dup_df
-def Remove_null_zero(df):
+def Remove_null_zero(df): #return a dataframe
     df_not_nan = df.dropna()
     return df_not_nan    
-def Fill_null_values(s):
+def Fill_null_values(s): #return a string value
     s=str(s) #Transform to string so that value can be read
     try:
         pass
-        if len(s)==0:
-            s="---"
+        if len(s)==0: #Valid if it's a null or empty value
+            s="---" #will Fill value with 3 "-"
         elif s=="":
             s="---"
         elif s is None:
             s="---"
         elif s=="None":
+            s="---"
+        elif s=="Null":
             s="---"
         elif s=="":
             s="---"
@@ -72,7 +73,7 @@ def Fill_null_values(s):
     finally:
         pass
         #print("nulos: " + str(s))
-    return s    
+    return s #return value
 def Remove_spacewhite(s): #this method receives a string for spaces white remove
     try: 
         s=str(s) #Transform to string so that value can be read
@@ -96,18 +97,18 @@ def Remove_Special_Characters(s):#this method receives a string for special char
     except Exception as ex:
         print('error replace 0: {}'.format(ex)) 
 
-def GenerateDate(dte, formatdateorigin, formatdatedestiny,index):
+def GenerateDate(dte, formatdateorigin, formatdatedestiny,index): #Get 4 parameters; date or datetime, date format source, end date format and index number
     formatdatedestiny=str(formatdatedestiny)
     formatdateorigin=str(formatdateorigin)
     #print("origen: "+formatdateorigin)
     #print("destino: "+formatdatedestiny)
     #try:
         #pass
-    if formatdatedestiny=="dd/mm/yyyy":
+    if formatdatedestiny=="dd/mm/yyyy": ##Read end date format
         pass        
-        if formatdateorigin=="ddmmyyyy":
+        if formatdateorigin=="ddmmyyyy": #Read date format Source
             pass
-            dte = datetime.strptime(dte, '%d%m%Y').strftime('%d/%m/%Y')
+            dte = datetime.strptime(dte, '%d%m%Y').strftime('%d/%m/%Y') #Apply date format transform
         elif formatdateorigin=="yyyymmdd":
             pass 
             dte = datetime.strptime(dte, '%Y%m%d').strftime('%d/%m/%Y')
@@ -206,12 +207,11 @@ def GenerateDate(dte, formatdateorigin, formatdatedestiny,index):
         # desc_errores.append("Formato de fecha invalido. " + str(dte))#description is added to the desc_error list
         #print('error fechas: {}'.format(ex))      
     return dte
-def Format_Decimal(z):
-    
+def Format_Decimal(z): #Sets the format to decimal values with only 2 decimal place 
     z=str(z).replace(" ","")# first is transformed to string so thye removes whitespace
     z=float(z)#is transformed to "float" to format as decimal
     z=round(z,2)#limited to 2 decimal places
-    return z        
+    return z #return value
 
 def Validate_Names(name, index): # They can only be letters, "-" and "'"
     name=str(name)#Transform to string so that value can be read
@@ -285,11 +285,11 @@ def Validate_rfc(z, index): #his method receives a string and an index number to
         errordata.append(index) #index is added to the error list
         desc_errores.append("monto menor a 0:", ex)#description is added to the desc_error list
         print('Error flotante: {}'.format(ex))    
-def Validate_Amounts(z,index):
+def Validate_Amounts(z,index): #return a boolean value
     TorF=True
     try:
-        z=float(z)# Convert Number to float    
-        if z<0: #if the value is less that zero than, returns False
+        z=float(z)# Convert Number value to float value
+        if z<0: #if the value is less that zero than returns False
             TorF=False
             errordata.append(index) #index is added to the error list
             desc_errores.append("Monto menor a 0")#description is added to the desc_error list
@@ -300,143 +300,154 @@ def Validate_Amounts(z,index):
         print('Error flotante: {}'.format(ex))
 
 #------------------FUNCIONES SPARK
-def create_df(spark_s, path_f):
+def create_df(spark_s, path_f): #Get 2 parameters; a spark session and a file path for convert to spark dataframe
     try:
         pass
-        if (path_f.endswith(".csv")):
-            DF_info=spark_s.read.option('header','true').option('delimiter', ',').option('inferSchema','true').csv(path_f)
+        if (path_f.endswith(".csv")): #read to extension file
+            DF_info=spark_s.read.option('header','true').option('delimiter', ',').option('inferSchema','true').csv(path_f) #Tranform file to dataframe
         if(path_f.endswith(".parquet")):
             DF_info=spark_s.read.parquet(path_f)
+        if(path_f.endswith(".json")):
+            DF_info=spark_s.read.json(path_f)
+        if(path_f.endswith(".xml")):
+            DF_info=spark_s.read.xml(path_f)
         return DF_info
     except Exception as ex:
         pass    
         print('error creando dataframe con spark: {}'.format(ex)) 
         spark_s.stop()           
     
-#-------------------------INICIA SPARK     
+#-------------------------INICIA SPARK
+SS=True #Indicate if Spark is correct
 try:        
     sparksession=Spark_Session()
-    print("Sesion de spark iniciada")
-    sprksql=SparkSql(sparksession) 
-    print("Contexto sparksql creado")
+    #sprksql=SparkSql(sparksession) 
 except Exception as ex:
-    print('error iniciando spark: {}'.format(ex))  
+    resultMessage = 'error iniciando spark: {}'.format(ex)
+    SS=False
 #-----------------------INICIA PROCESO
-try:
-    pass    
-    errordata=[]
-    desc_errores=[]
-    select_col=[]
-    
-    Remove_spacewhite_udf=udf(lambda z: Remove_spacewhite(z), StringType())    
-    Remove_Special_Characters_udf=udf(lambda z: Remove_Special_Characters(z), StringType())
-    Fill_null_values_udf=udf(lambda z: Fill_null_values(z), StringType())
-    
-    df_data_spk_pd=create_df(sparksession,pathIn+'Merge_data_raw.csv')
-    print("conteo original: "+str(df_data_spk_pd.count()))
-    df_data_spk_pd=Remove_duplicates(df_data_spk_pd)        
-    print("conteo sin duplicados: "+str(df_data_spk_pd.count()))
-      
-    row_num=df_data_spk_pd.count()
-    #---------------------apply udf
-    df_data_spk_pd=df_data_spk_pd.select([Remove_spacewhite_udf(column).alias(str(column)) for column in df_data_spk_pd.columns])#.show(1000,truncate=False)           
-    df_data_spk_pd=df_data_spk_pd.select([Remove_Special_Characters_udf(column).alias(str(column)) for column in df_data_spk_pd.columns])
-    #df_data_spk_pd=df_data_spk_pd.select([Fill_null_values_udf(column).alias(str(column)) for column in df_data_spk_pd.columns])
-    
-    coldatatype=df_data_spk_pd.dtypes #
-    #print(coldatatype)
-    df_data_spk_pd=df_data_spk_pd.toPandas() #Convert DF Spark to DF Pandas
+if SS:
+    pass
+    try:
+        pass    
+        #Init Variables
+        errordata=[]
+        desc_errores=[]
+        select_col=[]
+        resultMessage=""
 
-    
-    for colu in coldatatype:        
-        pass         
-        colname=str(colu[0])
-        datatype=str(colu[1])
-        #print(str(colu) + "col "+ colname + " datyp " + datatype)  
-        #print(colu)
-        index1=0   #reset index
-        try:
-            pass
-            for row in df_data_spk_pd.iterrows(): #loop through each line of the dataframe                                                 
-                try:
-                    data=df_data_spk_pd.loc[index1,colname]  
-                    data=str(data)
-                    data=Fill_null_values(data)
-                    
-                    if colname.__contains__("fecha") | colname.__contains__("date"):
-                        if data!="---":                            
-                            try:
-                                pass
-                                df_data_spk_pd.loc[index1,colname]=GenerateDate(data, "ddmmyyyy","dd/mm/yyyy",index1)
-                            except Exception as e:
-                                pass
+        #Create UDF
+        Remove_spacewhite_udf=udf(lambda z: Remove_spacewhite(z), StringType())    
+        Remove_Special_Characters_udf=udf(lambda z: Remove_Special_Characters(z), StringType())
+        Fill_null_values_udf=udf(lambda z: Fill_null_values(z), StringType())
+        
+        df_data_spk_pd=create_df(sparksession,pathIn+'Merge_data_raw.csv')
+        #print("conteo original: "+str(df_data_spk_pd.count()))
+        df_data_spk_pd=Remove_duplicates(df_data_spk_pd)        
+        #print("conteo sin duplicados: "+str(df_data_spk_pd.count()))
+        
+        row_num=df_data_spk_pd.count()
+        #---------------------apply udf
+        df_data_spk_pd=df_data_spk_pd.select([Remove_spacewhite_udf(column).alias(str(column)) for column in df_data_spk_pd.columns])#.show(1000,truncate=False)           
+        df_data_spk_pd=df_data_spk_pd.select([Remove_Special_Characters_udf(column).alias(str(column)) for column in df_data_spk_pd.columns])
+        #df_data_spk_pd=df_data_spk_pd.select([Fill_null_values_udf(column).alias(str(column)) for column in df_data_spk_pd.columns])
+        
+        coldatatype=df_data_spk_pd.dtypes #get dataframe columns name and column datatype
+        #print(coldatatype)
+        df_data_spk_pd=df_data_spk_pd.toPandas() #Convert DF Spark to DF Pandas
+
+        
+        for colu in coldatatype: #Loop through each column       
+            pass         
+            colname=str(colu[0])
+            datatype=str(colu[1])
+            #print(str(colu) + "col "+ colname + " datyp " + datatype)  
+            #print(colu)
+            index1=0   #reset index
+            try:
+                pass
+                for row in df_data_spk_pd.iterrows(): #loop through each line of the dataframe                                                 
+                    try:
+                        data=df_data_spk_pd.loc[index1,colname] #Get current value of current column and row 
+                        data=str(data)
+                        data=Fill_null_values(data) #Fill values
+                        
+                        if colname.__contains__("fecha") | colname.__contains__("date"):
+                            if data!="---":                            
                                 try:
                                     pass
-                                    print("fallo en el primer intento")
-                                    df_data_spk_pd.loc[index1,colname]=GenerateDate(data, "yyyymmdd","dd/mm/yyyy",index1)
+                                    df_data_spk_pd.loc[index1,colname]=GenerateDate(data, "ddmmyyyy","dd/mm/yyyy",index1) #Convert dare format
                                 except Exception as e:
                                     pass
-                                    print("fallo en el segundo intento")
-                                    errordata.append(index) #index is added to the error list
-                                    desc_errores.append("Formato de fecha invalido. " + str(data))#description is added to the desc_error list                            
-                                    print("Formato de fecha invalido. " + str(data))
-                        else:
-                            errordata.append(index) #index is added to the error list
-                            desc_errores.append("Formato de fecha invalido. " + str(data))#description is added to the desc_error list                            
-                    elif colname.__contains__("tel") | colname.__contains__("phone"):
-                        if(Validate_phone(data, 10, index1)==False):
-                            print('Malformed Phone number: ', data)                        
-                    elif colname.__contains__("nombre") | colname.__contains__("name"):
-                        if(Validate_Names(data, index1)==False):
-                            print('Malformed name: ', data)
-                    elif colname.__contains__("correo") | colname.__contains__("email"):
-                        if(Validate_Email(data, index1)==False):
-                            print('Malformed email: ', data) 
-                    elif colname.__contains__("rfc"):
-                        if(Validate_rfc(data, index1)==False):
-                            print('Malformed rfc: ', data)
-                    
-                    if datatype in ["int", "long", "float", "double"]:
-                        if(Validate_Amounts(data, index1)==False):
-                            print('Malformed amount: ', data)
-                    elif datatype in ["float", "double"]:
-                        df_data_spk_pd.loc[index1,colname]=Format_Decimal(data)
-                    
-                    index1=index1+1   
-                except Exception as ex:
-                    pass      
-                    #print('error validando datos con pandas: {}'.format(ex) +" col: " + colname +" dty: "+ datatype + " data: "+data + " index: " + str(index1))
-                    print('error validando datos con pandas: {}'.format(ex) +" col: " + colname + " data: "+data + " index: " + str(index1))
-                    sparksession.stop()
-                    #break
+                                    try:
+                                        pass
+                                        #print("fallo en el primer intento")
+                                        df_data_spk_pd.loc[index1,colname]=GenerateDate(data, "yyyymmdd","dd/mm/yyyy",index1)#Convert dare format
+                                    except Exception as e:
+                                        pass
+                                        #print("fallo en el segundo intento")
+                                        errordata.append(index) #index is added to the error list
+                                        desc_errores.append("Formato de fecha invalido. " + str(data))#description is added to the desc_error list                            
+                                        print("Formato de fecha invalido. " + str(data))
+                            else:
+                                errordata.append(index) #index is added to the error list
+                                desc_errores.append("Formato de fecha invalido. " + str(data))#description is added to the desc_error list                            
+                        elif colname.__contains__("tel") | colname.__contains__("phone"):
+                            if(Validate_phone(data, 10, index1)==False):
+                                print('Malformed Phone number: ', data)                        
+                        elif colname.__contains__("nombre") | colname.__contains__("name"):
+                            if(Validate_Names(data, index1)==False):
+                                print('Malformed name: ', data)
+                        elif colname.__contains__("correo") | colname.__contains__("email"):
+                            if(Validate_Email(data, index1)==False):
+                                print('Malformed email: ', data) 
+                        elif colname.__contains__("rfc"):
+                            if(Validate_rfc(data, index1)==False):
+                                print('Malformed rfc: ', data)
                         
-        except Exception as ex:            
+                        if datatype in ["int", "long", "float", "double"]:
+                            if(Validate_Amounts(data, index1)==False):
+                                print('Malformed amount: ', data)
+                        if datatype in ["float", "double"]:
+                            df_data_spk_pd.loc[index1,colname]=Format_Decimal(data)
+                        
+                        index1=index1+1   
+                    except Exception as ex:
+                        pass      
+                        #print('error validando datos con pandas: {}'.format(ex) +" col: " + colname +" dty: "+ datatype + " data: "+data + " index: " + str(index1))
+                        resultMessage = 'error validando datos con pandas: {}'.format(ex) +" col: " + colname + " data: "+data + " index: " + str(index1)
+                        sparksession.stop()
+                        #break
+                            
+            except Exception as ex:            
+                pass        
+                resultMessage='error validando columnas con pandas: {}'.format(ex) +" col: " + colname + " index: " + str(index1)
+        
+        now = str(date.today())
+        #now=str(datetime.now())
+        now=now.replace('-','').replace(':','').replace('.', '').replace(' ','_')
+        
+        try:
             pass        
-            print('error validando columnas con pandas: {}'.format(ex) +" col: " + colname + " index: " + str(index1))
-    now = str(date.today())
-    #now=str(datetime.now())
-    now=now.replace('-','').replace(':','').replace('.', '').replace(' ','_')
-    
-    try:
-        pass        
-        df_clean=df_data_spk_pd.drop(df_data_spk_pd.index[errordata])
-        df_dirty=df_data_spk_pd.loc[errordata] #Only the rows that have some erroneous data are saved
-        df_dirty["Desc_error"]=desc_errores
-        
-        if (df_clean.shape[0]>0):
-            print("DATA CLEAN")
-            df_clean.to_csv(pathOut+"outfile_DataClean_"+now+".csv", index=False)#the csv file is generated with the corresponding data
-        if (df_dirty.shape[0]>0):
-            print("DATA REJECTED")
-            df_dirty.to_csv(pathOut+"outfile_Data_DirtyRejected"+now+".csv", index=False)#the csv file is generated with the corresponding data    
-        
-        print("Reglas aplicadas correctamente")
-    except Exception as ex:
-        pass
-        print('error generando archivos: {}'.format(ex))    
+            df_clean=df_data_spk_pd.drop(df_data_spk_pd.index[errordata])
+            df_dirty=df_data_spk_pd.loc[errordata] #Only the rows that have some erroneous data are saved
+            df_dirty["Desc_error"]=desc_errores
+            
+            if (df_clean.shape[0]>0):
+                print("DATA CLEAN")
+                df_clean.to_csv(pathOut+"outfile_DataClean_"+now+".csv", index=False)#the csv file is generated with the corresponding data
+            if (df_dirty.shape[0]>0):
+                print("DATA REJECTED")
+                df_dirty.to_csv(pathOut+"outfile_Data_DirtyRejected"+now+".csv", index=False)#the csv file is generated with the corresponding data    
+            
+            resultMessage = "Reglas aplicadas correctamente"
+        except Exception as ex:
+            pass
+            resultMessage = 'error generando archivos: {}'.format(ex)
+            sparksession.stop()
         sparksession.stop()
-    sparksession.stop()
-except Exception as ex:
-    pass    
-    print('error depurando datos con spark: {}'.format(ex))
-    sparksession.stop()
+    except Exception as ex:
+        pass    
+        resultMessage='error depurando datos con spark: {}'.format(ex)
+        sparksession.stop()
+print(resultMessage)
