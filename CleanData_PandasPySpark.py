@@ -85,7 +85,7 @@ def Remove_spacewhite(s): #this method receives a string for spaces white remove
 def Remove_Special_Characters(s):#this method receives a string for special characteres remove
     s=str(s)#Transform to string so that value can be read
     #s=s.replace(" ","")    
-    CaracteresEspeciales=["#",'$','%','&','!','|','[',']','{','}','/','_',';',':',',','*',"-","'"] #Special Characteres List   
+    CaracteresEspeciales=["#",'$','%','&','!','|','[',']','{','}','/','_',';',':',',','*',"-","'",'`'] #Special Characteres List   
     try:
         for z in s: #loop through each character of recived word
             if(z in CaracteresEspeciales):  #Validate if the current character is in the Special Characteres list
